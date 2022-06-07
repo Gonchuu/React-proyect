@@ -4,7 +4,7 @@ import "./Header.scss";
 
 const Header = () => {
     return (
-        <header className="App-header">
+        <header>
         <h1 className="title">Elden Ring</h1>
         </header>
     );

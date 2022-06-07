@@ -7,26 +7,26 @@ import Home from '../pages/Home';
 import About from '../pages/About';
 import Users from '../pages/Users';
 import NotFound from '../pages/NotFound';
-import '../App.scss';
+import './Routess.scss';
 
 
 const Routess = () => {
     return (
         <Router>
-            <header>
+            <div className='container'>
                 <Link to='/'>
-                    <button>Home</button>
+                    <button  className='button'>Home</button>
                 </Link>
                 <Link to='/About'>
-                    <button>About</button>
+                    <button  className='button'>About</button>
                 </Link>
                 <Link to='/Users'>
-                    <button>Users</button>
+                    <button  className='button'>Users</button>
                 </Link>
                 <Link to='/NotFound'>
-                    <button>NotFound</button>
+                    <button  className='button'>NotFound</button>
                 </Link>
-            </header>
+            </div>
 
             <main>
                 <Routes>
