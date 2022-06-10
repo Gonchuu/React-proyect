@@ -8,6 +8,7 @@ import About from '../pages/About';
 import Users from '../pages/Users';
 import NotFound from '../pages/NotFound';
 import './Routess.scss';
+import UsersDetail from '../pages/UsersDetail';
 
 
 const Routess = () => {
@@ -18,13 +19,10 @@ const Routess = () => {
                     <button  className='button'>Home</button>
                 </Link>
                 <Link to='/About'>
-                    <button  className='button'>About</button>
+                    <button  className='button'>Search Characters</button>
                 </Link>
                 <Link to='/Users'>
-                    <button  className='button'>Users</button>
-                </Link>
-                <Link to='/NotFound'>
-                    <button  className='button'>NotFound</button>
+                    <button  className='button'>Characters</button>
                 </Link>
             </div>
 
@@ -33,7 +31,8 @@ const Routess = () => {
                     <Route path='/' element={<Home />} />
                     <Route path='/About' element={<About />} />
                     <Route path='/Users' element={<Users />} />
-                    <Route path='/NotFound' element={<NotFound />} />
+                    <Route path='/Users/:idUser' element={<UsersDetail />} />
+                    <Route path='*' element={<NotFound />} />
                 </Routes>
             </main>
         </Router>
